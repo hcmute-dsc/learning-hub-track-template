@@ -14,7 +14,7 @@ The repo must already exist (`hcmute-dsc/learning-hub-track-<slug>`, created by 
 If `tracks/example-track/` still exists, the repo isn't initialized:
 
 ```bash
-git switch -c feat/<issue>-init-track
+git switch -c feat/content-<proposal-issue>-init-track   # the proposal is in learning-hub-content
 node tools/init-track.mjs <slug> "<Tên track>" <github-username>
 ```
 
