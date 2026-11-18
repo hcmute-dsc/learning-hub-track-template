@@ -1,0 +1,14 @@
+# Chương (module). Đặc tả: CONTENT-SPECIFICATION §3.2
+uid: 00000000-0000-4000-8000-000000000011
+slug: getting-started
+title: "Chương 1: Bắt đầu"
+summary: "Làm quen cách viết bài học và bài tập."
+# Mọi file trong lessons/ và exercises/ phải có tên ở đây (không có là lỗi "orphan").
+# Thứ tự hiển thị = thứ tự trong danh sách.
+lessons:
+  - 01-welcome
+  - 02-writing-lessons
+exercises:
+  - welcome-quiz
+  - setup-check
+  - mini-project

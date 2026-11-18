@@ -1,0 +1,28 @@
+# Bài tập loại quiz: chấm tự động trên web. Đặc tả: CONTENT-SPECIFICATION §3.4–3.5
+uid: 00000000-0000-4000-8000-000000000201
+slug: welcome-quiz
+title: "Kiểm tra nhanh"
+type: quiz                 # code | quiz | self_check | project
+difficulty: easy           # easy | medium | hard
+lesson: welcome            # slug bài học liên quan, cùng chương (không bắt buộc)
+estimatedMinutes: 5
+authors: [github:TienNHM]
+spec:
+  passScore: 0.7           # tỉ lệ câu đúng để qua (0–1)
+  questions:
+    - id: q1
+      type: single         # một đáp án: answer là chỉ số (bắt đầu từ 0)
+      prompt: "File nào khai báo danh sách bài học của một chương?"
+      options: ["track.yaml", "module.yaml", "README.md"]
+      answer: 1
+      explanation: "`module.yaml` liệt kê bài học và bài tập của chương."
+    - id: q2
+      type: multiple       # nhiều đáp án: answer là mảng chỉ số
+      prompt: "Trường nào KHÔNG được đổi sau khi bài đã publish?"
+      options: ["uid", "title", "summary"]
+      answer: [0]
+      explanation: "`uid` là khóa của bài trong database; đổi là mất tiến độ của người học."
+    - id: q3
+      type: short_text     # tự gõ: answer là các cách viết được chấp nhận
+      prompt: "Thư mục chứa ảnh của track tên là gì?"
+      answer: ["assets", "assets/"]
