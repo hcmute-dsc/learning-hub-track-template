@@ -21,6 +21,8 @@ Mỗi file mẫu có comment giải thích từng trường. Đặc tả đầy 
 
 ## Tạo track mới (cho mentor)
 
+Hướng dẫn đầy đủ, kể cả phần của Ban chủ nhiệm và các lỗi thường gặp: [NEW-TRACK.md](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/ops/NEW-TRACK.md). Dùng agent (Claude Code…) thì gọi skill `new-track`.
+
 1. Mở issue "Đề xuất bài mới hoặc lộ trình mới" trong [learning-hub-content](https://github.com/hcmute-dsc/learning-hub-content/issues/new/choose) để Ban chủ nhiệm biết và tạo repo cho bạn.
 2. Ban chủ nhiệm tạo repo `hcmute-dsc/learning-hub-track-<slug>` bằng nút **Use this template** của repo này, cấp quyền cho bạn.
 3. Clone repo về, rồi chạy (cần Node 22):
