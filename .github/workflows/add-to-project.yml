@@ -1,0 +1,50 @@
+name: Add to project
+
+# Adds every new issue and pull request of this repo to the "DSC Learning Hub" project
+# (https://github.com/orgs/hcmute-dsc/projects/1). The project's own "Auto-add" workflow
+# only covers learning-hub: the org's Free plan allows one auto-add workflow with one
+# repo. How to set up the GitHub App: learning-hub-docs, docs/ops/WORKFLOW.md §4.
+#
+# The token comes from the org's GitHub App, not a member's personal token: an App has its
+# own API rate limit, so a busy member account can no longer make this job fail
+# (learning-hub-docs#8), and nothing breaks when that member leaves.
+#
+# pull_request_target (not pull_request) so PRs from forks also get added: the job never
+# checks out or runs code from the PR, it only calls the GitHub API with the PR's URL.
+on:
+  issues:
+    types: [opened, reopened, transferred]
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions: {}
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # Repository variable: the App's Client ID (not secret)
+      CLIENT_ID: ${{ vars.PROJECT_APP_CLIENT_ID }}
+    steps:
+      - name: Skip when the GitHub App is not set up yet
+        if: env.CLIENT_ID == ''
+        run: echo "::notice::PROJECT_APP_CLIENT_ID is not set, so nothing was added to the project"
+      - name: Get a short-lived token from the GitHub App
+        id: app-token
+        if: env.CLIENT_ID != ''
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ vars.PROJECT_APP_CLIENT_ID }}
+          private-key: ${{ secrets.PROJECT_APP_PRIVATE_KEY }}
+          # The project belongs to the org, so the token is for the org installation
+          owner: hcmute-dsc
+          # Only what adding an item needs, even if the App is given more later
+          permission-organization-projects: write
+          permission-issues: read
+          permission-pull-requests: read
+      - uses: actions/add-to-project@f2c1f1fa649a891be84948ea89b5dfba1526ef05 # v2.0.1
+        if: env.CLIENT_ID != ''
+        with:
+          project-url: https://github.com/orgs/hcmute-dsc/projects/1
+          github-token: ${{ steps.app-token.outputs.token }}

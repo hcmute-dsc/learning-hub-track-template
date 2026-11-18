@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Lỗi của trang web (không phải nội dung bài)
+    url: https://github.com/hcmute-dsc/learning-hub/issues/new/choose
+    about: Đăng nhập, nộp bài, giao diện… thuộc repo learning-hub.
+  - name: Quy trình làm việc
+    url: https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/ops/WORKFLOW.md
+    about: Cách tạo issue, đặt tên nhánh, commit, mở PR và review.

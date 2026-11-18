@@ -1,0 +1,20 @@
+# Bài tập dự án: người học nộp link, mentor chấm theo rubric.
+uid: 00000000-0000-4000-8000-000000000203
+slug: mini-project
+title: "Dự án nhỏ"
+type: project
+difficulty: medium
+lesson: writing-lessons
+estimatedMinutes: 60
+requiresReview: true       # mặc định true với project
+# Bài tập phải làm xong trước, dạng <track>/<module>/<slug>
+prerequisites:
+  - example-track/getting-started/welcome-quiz
+authors: [github:TienNHM]
+spec:
+  deliverable: github_repo_or_pr   # github_repo_or_pr | link
+  rubric:
+    - criterion: "Chạy được, đúng yêu cầu"
+      weight: 3
+    - criterion: "Code/bài viết rõ ràng, có README"
+      weight: 1

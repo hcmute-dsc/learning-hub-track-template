@@ -1,0 +1,47 @@
+name: Validate track
+
+# Checks this track against the content specification on every PR and on main.
+# The validator lives in the app repo (packages/content), so app and content always
+# agree on the format. Cross-track checks (duplicate uids, prerequisites into other
+# tracks) run in learning-hub-content when the track is published (DECISIONS ADR-10).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Exactly one track folder, named like its slug
+        run: |
+          dirs=$(find tracks -mindepth 1 -maxdepth 1 -type d)
+          count=$(echo "$dirs" | grep -c . || true)
+          if [ "$count" -ne 1 ]; then
+            echo "::error::tracks/ must contain exactly one folder (found $count)"; exit 1
+          fi
+          dir=$(basename "$dirs")
+          slug=$(sed -n 's/^slug:[[:space:]]*"\{0,1\}\([a-z0-9-]*\)"\{0,1\}[[:space:]]*$/\1/p' "tracks/$dir/track.yaml" | head -1)
+          if [ "$slug" != "$dir" ]; then
+            echo "::error file=tracks/$dir/track.yaml::slug \"$slug\" must equal the folder name \"$dir\""; exit 1
+          fi
+          echo "track: $slug"
+      - uses: actions/checkout@v5
+        with:
+          repository: hcmute-dsc/learning-hub
+          path: .hub
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Build the validator
+        working-directory: .hub
+        run: |
+          npx -y pnpm@9.15.4 install --frozen-lockfile --filter @hub/content...
+          npx -y pnpm@9.15.4 --filter @hub/content build
+      - name: Validate the track
+        run: node .hub/packages/content/dist/cli.js .

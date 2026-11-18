@@ -1,0 +1,13 @@
+# Bài tập tự kiểm tra: người học tự đánh dấu từng mục.
+uid: 00000000-0000-4000-8000-000000000202
+slug: setup-check
+title: "Chuẩn bị môi trường"
+type: self_check
+difficulty: easy
+lesson: welcome
+estimatedMinutes: 15
+authors: [github:TienNHM]
+spec:
+  checklist:
+    - "Đã cài công cụ cần cho track (ghi rõ phiên bản)"
+    - "Chạy được lệnh kiểm tra phiên bản"

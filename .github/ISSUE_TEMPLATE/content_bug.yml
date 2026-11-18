@@ -1,0 +1,25 @@
+name: Lỗi nội dung
+description: Sai kiến thức, sai đáp án, lỗi chính tả, câu lệnh không chạy
+title: "[Content] "
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Bài nào
+      description: Link trang trên Learning Hub hoặc đường dẫn file trong repo.
+      placeholder: https://learn.hcmute-dsc.io.vn/lessons/…
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: Đang sai thế nào
+      description: Trích đoạn sai, câu lệnh và kết quả bạn chạy được.
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: Nên sửa thành
+      description: Kèm nguồn tham khảo (tài liệu chính thức) nếu có.

@@ -1,0 +1,34 @@
+# Track (lộ trình). Đặc tả đầy đủ: CONTENT-SPECIFICATION §3.1
+# https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/product/CONTENT-SPECIFICATION.md
+#
+# Chạy `node tools/init-track.mjs <slug> "<tên track>" <github-của-bạn>` một lần sau khi tạo
+# repo từ template: lệnh đó đổi slug, tên, maintainer và sinh uid mới cho mọi file.
+
+# Khóa của track trong database. Sinh một lần, KHÔNG BAO GIỜ đổi (đổi là mất tiến độ học).
+uid: 00000000-0000-4000-8000-000000000001
+# Đường dẫn trên web: /tracks/<slug>. Trùng tên thư mục tracks/<slug>/ và tên repo learning-hub-track-<slug>.
+slug: example-track
+title: "Track mẫu"
+# 1–2 câu, hiện ở trang danh sách track
+summary: "Track mẫu để copy: một chương, hai bài học và ba loại bài tập (quiz, tự kiểm tra, dự án)."
+language: vi
+# beginner | intermediate | advanced
+level: beginner
+estimatedHours: 2
+tags: [example]
+# Học xong track, người học làm được gì (2–5 ý, bắt đầu bằng động từ)
+outcomes:
+  - "Biết cấu trúc một track trên Learning Hub"
+  - "Viết được bài học và bài tập đúng đặc tả"
+# Người duyệt nội dung của track, dạng github:<tên>. Phải khớp với CODEOWNERS.
+maintainers: [github:TienNHM]
+license: CC-BY-SA-4.0
+# Thứ tự trên trang danh sách track (nhỏ đứng trước)
+position: 100
+# Nếu track có bài loại `code`: repo mẫu cho cả track, mỗi bài code là một thư mục trong đó.
+# starterRepo: hcmute-dsc/<slug>-exercises
+# Nếu track lấy từ nguồn khác: ghi repo và commit gốc.
+# source: { repo: owner/name, commit: <40 ký tự> }
+# Thứ tự chương = thứ tự trong danh sách này (tên thư mục trong modules/)
+modules:
+  - 01-getting-started
