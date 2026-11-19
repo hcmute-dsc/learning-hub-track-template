@@ -7,6 +7,8 @@ Repo nội dung của **một track** trên [DSC Learning Hub](https://learn.hcm
 ```
 tracks/example-track/        # đúng MỘT thư mục, tên = slug của track
   track.yaml                 # thông tin track + danh sách chương
+  docs/setup.md              # tuỳ chọn: trang "Cài đặt" (cài công cụ, tự kiểm tra bài)
+  docs/resources.md          # tuỳ chọn: trang "Tài liệu thêm"
   assets/                    # ảnh (≤ 500 KB/ảnh)
   modules/01-getting-started/
     module.yaml              # danh sách bài học và bài tập của chương
