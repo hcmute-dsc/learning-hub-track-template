@@ -1,7 +1,9 @@
 # Chương (module). Đặc tả: CONTENT-SPECIFICATION §3.2
 uid: 00000000-0000-4000-8000-000000000011
 slug: getting-started
-title: "Chương 1: Bắt đầu"
+# Chỉ ghi tên chương. Site tự thêm "Chương 1:", "Chương 2:"… theo thứ tự trong track.yaml,
+# nên đừng ghi "Chương 1:" ở đây (sẽ hiện thành "Chương 1: Chương 1: …").
+title: "Bắt đầu"
 summary: "Làm quen cách viết bài học và bài tập."
 # Mọi file trong lessons/ và exercises/ phải có tên ở đây (không có là lỗi "orphan").
 # Thứ tự hiển thị = thứ tự trong danh sách.
