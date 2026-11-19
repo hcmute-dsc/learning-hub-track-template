@@ -24,7 +24,8 @@ node tools/init-track.mjs <slug> "<Tên track>" <github-username>
 
 - `tracks/<slug>/track.yaml`: summary, level, tags, outcomes, estimated hours, `source` if content comes from elsewhere.
 - One folder per module, `modules/<nn>-<slug>/module.yaml` listing lessons and exercises in order.
-- Lessons in `lessons/*.md`, exercises in `exercises/<slug>/` (`exercise.yaml` + `statement.md`). The example files show every field.
+- Lessons in `lessons/*.md`, exercises in `exercises/<slug>/` (`exercise.yaml` + `statement.md`, optional `mentor-notes.md` for reviewers). The example files show every field.
+- `mentor-notes.md` is shown only to mentors and admins on the hub, but this repo is public: never put answers, solutions or hidden tests there.
 - Every new item gets a new `uid` (`node -e "console.log(crypto.randomUUID())"`). Never change a `uid` once published.
 - Delete the example items you don't use, and their names in `module.yaml`.
 - **Run every command and code sample** in the lessons before committing. Quiz answers must match the questions.
