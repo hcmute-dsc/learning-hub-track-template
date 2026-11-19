@@ -23,7 +23,7 @@ node tools/init-track.mjs <slug> "<Tên track>" <github-username>
 ## 2. Write
 
 - `tracks/<slug>/track.yaml`: summary, level, tags, outcomes, estimated hours, `source` if content comes from elsewhere.
-- One folder per module, `modules/<nn>-<slug>/module.yaml` listing lessons and exercises in order.
+- One folder per module, `modules/<nn>-<slug>/module.yaml` listing lessons and exercises in order. Its `title` is the chapter name only: the hub adds "Chương N:" itself, so "Chương 1: Bắt đầu" would show as "Chương 1: Chương 1: Bắt đầu".
 - Lessons in `lessons/*.md`, exercises in `exercises/<slug>/` (`exercise.yaml` + `statement.md`, optional `mentor-notes.md` for reviewers). The example files show every field.
 - Track-level pages, both optional: `docs/setup.md` ("Cài đặt": what to install on Windows/macOS/Linux and one command to check it works) and `docs/resources.md` ("Tài liệu thêm"). Plain Markdown, no front matter, no `#` title. If the track needs tools installed, write `docs/setup.md` instead of a setup lesson; delete the files the track does not need.
 - `mentor-notes.md` is shown only to mentors and admins on the hub, but this repo is public: never put answers, solutions or hidden tests there.
