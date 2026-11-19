@@ -14,6 +14,7 @@ tracks/example-track/        # đúng MỘT thư mục, tên = slug của track
     exercises/<slug>/
       exercise.yaml          # loại bài, độ khó, đề/đáp án (quiz), checklist, rubric
       statement.md           # đề bài
+      mentor-notes.md        # tuỳ chọn: ghi chú cho mentor khi review (công khai, không ghi đáp án)
 tools/init-track.mjs         # chạy một lần sau khi tạo repo từ template
 ```
 
