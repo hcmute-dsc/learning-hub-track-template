@@ -69,4 +69,6 @@ Thấy dòng `git version 2.x` và tên của bạn là xong.
 - **Hỏi riêng:** ngại hỏi trước mọi người thì nhắn riêng (DM) cho mentor trên Discord: **@ten-mentor** (sửa thành mentor của track). Hỏi riêng cũng hoàn toàn bình thường.
 - **Sau khi nộp bài:** trả lời ngay trong mục "Trao đổi với mentor" dưới nhận xét của bài.
 
+Mọi người trong CLB theo [Quy tắc ứng xử](https://github.com/hcmute-dsc/.github/blob/master/CODE_OF_CONDUCT.md): không ai được chê câu hỏi của bạn, và câu hỏi riêng được giữ kín. Bị đối xử không đúng thì nhắn riêng Ban chủ nhiệm trên Discord.
+
 Khi hỏi, gửi kèm: bạn đang ở bài nào, lệnh đã chạy, và ảnh chụp lỗi. Nếu lỗi có token hay webhook URL thì **che phần đó** trước khi gửi.

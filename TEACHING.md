@@ -101,6 +101,8 @@ Những chỗ hay bị quên:
 - Lời giải để mở sau ("Đáp án") có thêm câu: "Đọc đáp án vẫn chưa hiểu? Nhắn mentor, đừng chỉ hỏi AI."
 - Track có secret (webhook URL, token) thì dạy cách **che** secret khi gửi lỗi, để người học không sợ đến mức không dám hỏi.
 
+- Mục "Hỏi ở đâu" link tới [Quy tắc ứng xử](https://github.com/hcmute-dsc/.github/blob/master/CODE_OF_CONDUCT.md) của CLB: câu hỏi cơ bản được chào đón và câu hỏi riêng được giữ kín.
+
 **Vì sao:** người mới ngại hỏi trước đám đông. Họ hỏi bạn bè trong nhóm riêng hoặc hỏi AI, và mentor không biết bài nào đang khó.
 
 **Tự kiểm tra:** một người mới, bị kẹt ở bất kỳ bài nào, có biết trong 10 giây phải nhắn ai không?

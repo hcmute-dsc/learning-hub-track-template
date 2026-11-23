@@ -2,6 +2,8 @@
 
 Cảm ơn bạn! Track này được nhiều thế hệ thành viên CLB cùng viết và sửa, nên hãy giữ file dễ đọc và có nguồn rõ ràng.
 
+Khi đóng góp, bạn đồng ý theo [Quy tắc ứng xử](https://github.com/hcmute-dsc/.github/blob/master/CODE_OF_CONDUCT.md) của CLB.
+
 ## Quy trình
 
 1. **Có issue trước.** Dùng mẫu "Lỗi nội dung" hoặc "Đề xuất" trong repo này. Tự gán mình, chuyển Status = In progress trên [Project #1](https://github.com/orgs/hcmute-dsc/projects/1). Tìm issue có sẵn trước khi tạo mới.
