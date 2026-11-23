@@ -21,7 +21,7 @@ Mỗi bài học và bài tập trong track phải đạt **6 tiêu chí** dư�
 2. nghĩa đen bằng tiếng Việt (init = initialize = *khởi tạo*);
 3. một câu nói nó làm gì.
 
-Đầu mỗi bài có hộp **"Từ mới trong bài"** liệt kê 3–7 từ bài đó giới thiệu.
+Đầu mỗi bài có hộp **"Từ mới trong bài"** liệt kê 3–7 từ bài đó giới thiệu. Không viết hộp bằng tay: khai báo từ như mục "Khai báo từ vựng" bên dưới, site tự tạo hộp.
 
 | Sai | Đúng |
 | --- | --- |
@@ -32,7 +32,13 @@ Mỗi bài học và bài tập trong track phải đạt **6 tiêu chí** dư�
 
 **Tự kiểm tra:** đọc lại bài như người chưa biết tiếng Anh chuyên ngành. Chữ nào bạn phải tra từ điển thì chưa đạt.
 
-> Sắp có: file `glossary.yaml` của track và tab **Từ vựng** trên site ([learning-hub#106](https://github.com/hcmute-dsc/learning-hub/issues/106)). Khi có, hộp "Từ mới trong bài" sẽ được site tự tạo từ `terms:` trong front matter. Đến lúc đó, viết hộp bằng tay như bài mẫu.
+**Khai báo từ vựng** ([learning-hub#106](https://github.com/hcmute-dsc/learning-hub/issues/106)):
+
+1. Ghi mỗi từ một lần trong `tracks/<slug>/glossary.yaml`: `term`, `expansion` (chữ đầy đủ), `literal` (nghĩa đen), `meaning`, `example`, `see`. Mẫu: `tracks/example-track/glossary.yaml`.
+2. Trong front matter của bài, liệt kê từ bài đó giới thiệu: `terms: [repository, init, commit]`.
+3. Viết từ đó trong **câu văn** ở lần đầu nó xuất hiện, không chỉ trong khối code.
+
+Site làm phần còn lại: hộp "Từ mới trong bài" ở đầu bài, gạch chân chấm và chú thích ở lần đầu từ xuất hiện (chạm vào là thấy nghĩa), và tab **Từ vựng** của track (A–Z, ô tìm, "Học ở bài …"). Validator báo lỗi nếu một từ trong `terms:` không có trong `glossary.yaml`. Mẫu đầy đủ: bài `03-teaching-standard.md`.
 
 ## T2. Giải thích trước khi thực hành
 

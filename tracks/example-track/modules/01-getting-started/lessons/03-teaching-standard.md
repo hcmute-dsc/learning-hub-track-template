@@ -5,11 +5,15 @@ title: "Bài mẫu: dạy theo chuẩn dễ hiểu"
 estimatedMinutes: 15
 objectives:
   - "Nhận ra 6 phần một bài học dễ hiểu cần có"
-  - "Viết được hộp từ mới, phần đọc hiểu và sơ đồ trạng thái cho bài của mình"
+  - "Khai báo được từ mới, viết được phần đọc hiểu và sơ đồ trạng thái cho bài của mình"
 # Bài cần học trước, dạng <track>/<module>/<slug>
 prerequisites:
   - example-track/getting-started/writing-lessons
 authors: [github:TienNHM]
+# Từ bài này giới thiệu (Tiêu chí T1). Mỗi từ phải có trong tracks/example-track/glossary.yaml.
+# Site tự làm hộp "Từ mới trong bài" ở đầu bài theo thứ tự này, và gạch chân chấm lần đầu
+# mỗi từ xuất hiện trong câu văn (không tính trong code và tiêu đề).
+terms: [repository, init, stage, commit, untracked]
 ---
 
 <!--
@@ -22,15 +26,13 @@ Mỗi mục có một dòng "(Tiêu chí Tx)" để bạn đối chiếu; xóa c
 
 Bài này dùng ví dụ "tạo commit đầu tiên với Git" để cho thấy một bài học đạt chuẩn trông thế nào.
 
-> **Từ mới trong bài** *(Tiêu chí T1)*
->
-> | Từ | Nghĩa |
-> | --- | --- |
-> | `repository` (repo) | *kho chứa*: thư mục mà Git theo dõi lịch sử thay đổi |
-> | `init` | viết tắt của *initialize* = *khởi tạo* |
-> | `stage` | *sân khấu, khu chờ*: nơi gom các thay đổi sẽ đưa vào commit tiếp theo |
-> | `commit` | *chốt, cam kết*: lưu một mốc thay đổi vào lịch sử, kèm lời nhắn |
-> | `untracked` | *chưa được theo dõi*: file mới, Git chưa từng lưu |
+<!--
+Tiêu chí T1: hộp "Từ mới trong bài" không viết ở đây. Site tạo nó từ `terms:` ở front matter
+và tracks/example-track/glossary.yaml. Trong bài, vẫn giải thích chữ ở lần đầu nó xuất hiện,
+và viết nó trong câu văn (không chỉ trong code) để site gạch chân và chú thích được.
+-->
+
+Ta sẽ init một repository mới, đưa một file từ trạng thái untracked vào khu stage, rồi chốt nó.
 
 ## 1. Vì sao cần học cái này
 
