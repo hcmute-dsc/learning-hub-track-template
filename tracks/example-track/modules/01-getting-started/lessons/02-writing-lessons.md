@@ -20,7 +20,7 @@ Bài học là file Markdown. Phần đầu (giữa hai dòng `---`) là thông 
 Luôn ghi ngôn ngữ để được tô màu:
 
 ```python
-print("Xin chào DSC")
+print("Xin chào HCMUTE DSC")
 ```
 
 ## Bảng
