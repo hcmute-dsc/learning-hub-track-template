@@ -11,7 +11,7 @@ prerequisites:
   - example-track/getting-started/writing-lessons
 authors: [github:TienNHM]
 # Từ bài này giới thiệu (Tiêu chí T1). Mỗi từ phải có trong tracks/example-track/glossary.yaml.
-# Site tự làm hộp "Từ mới trong bài" ở đầu bài theo thứ tự này, và gạch chân chấm lần đầu
+# Site tự làm hộp "Từ mới trong bài" (thu gọn, cuối bài) theo thứ tự này, và gạch chân chấm lần đầu
 # mỗi từ xuất hiện trong câu văn (không tính trong code và tiêu đề).
 terms: [repository, init, stage, commit, untracked]
 ---

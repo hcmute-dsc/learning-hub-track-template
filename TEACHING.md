@@ -21,7 +21,7 @@ Mỗi bài học và bài tập trong track phải đạt **6 tiêu chí** dư�
 2. nghĩa đen bằng tiếng Việt (init = initialize = *khởi tạo*);
 3. một câu nói nó làm gì.
 
-Đầu mỗi bài có hộp **"Từ mới trong bài"** liệt kê 3–7 từ bài đó giới thiệu. Không viết hộp bằng tay: khai báo từ như mục "Khai báo từ vựng" bên dưới, site tự tạo hộp.
+Mỗi bài có hộp **"Từ mới trong bài"** liệt kê 3–7 từ bài đó giới thiệu. Không viết hộp bằng tay: khai báo từ như mục "Khai báo từ vựng" bên dưới, site tự tạo hộp.
 
 | Sai | Đúng |
 | --- | --- |
@@ -38,7 +38,7 @@ Mỗi bài học và bài tập trong track phải đạt **6 tiêu chí** dư�
 2. Trong front matter của bài, liệt kê từ bài đó giới thiệu: `terms: [repository, init, commit]`.
 3. Viết từ đó trong **câu văn** ở lần đầu nó xuất hiện, không chỉ trong khối code.
 
-Site làm phần còn lại: hộp "Từ mới trong bài" ở đầu bài, gạch chân chấm và chú thích ở lần đầu từ xuất hiện (chạm vào là thấy nghĩa), và tab **Từ vựng** của track (A–Z, ô tìm, "Học ở bài …"). Validator báo lỗi nếu một từ trong `terms:` không có trong `glossary.yaml`. Mẫu đầy đủ: bài `03-teaching-standard.md`.
+Site làm phần còn lại: hộp "Từ mới trong bài" thu gọn ở cuối bài để ôn lại, gạch chân chấm và chú thích ở lần đầu từ xuất hiện (chạm vào là thấy nghĩa), và tab **Từ vựng** của track (A–Z, ô tìm, "Học ở bài …"). Validator báo lỗi nếu một từ trong `terms:` không có trong `glossary.yaml`. Mẫu đầy đủ: bài `03-teaching-standard.md`.
 
 ## T2. Giải thích trước khi thực hành
 
