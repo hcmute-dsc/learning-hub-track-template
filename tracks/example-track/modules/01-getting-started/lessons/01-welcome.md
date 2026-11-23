@@ -22,4 +22,4 @@ authors: [github:TienNHM]
 
 1. Đọc bài học theo thứ tự.
 2. Làm bài tập ở cuối mỗi chương.
-3. Bị kẹt thì hỏi mentor của track trên Discord CLB.
+3. Bị kẹt thì hỏi mentor, công khai hoặc nhắn riêng đều được. Xem mục "Hỏi ở đâu" ở trang **Cài đặt** của track.

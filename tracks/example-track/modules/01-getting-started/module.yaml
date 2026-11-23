@@ -10,6 +10,7 @@ summary: "Làm quen cách viết bài học và bài tập."
 lessons:
   - 01-welcome
   - 02-writing-lessons
+  - 03-teaching-standard
 exercises:
   - welcome-quiz
   - setup-check
