@@ -1,6 +1,6 @@
 name: Add to project
 
-# Adds every new issue and pull request of this repo to the "DSC Learning Hub" project
+# Adds every new issue and pull request of this repo to the "HCMUTE DSC Learning Hub" project
 # (https://github.com/orgs/hcmute-dsc/projects/1). The project's own "Auto-add" workflow
 # only covers learning-hub: the org's Free plan allows one auto-add workflow with one
 # repo. How to set up the GitHub App: learning-hub-docs, docs/ops/WORKFLOW.md §4.

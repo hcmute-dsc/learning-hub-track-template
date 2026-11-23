@@ -1,6 +1,6 @@
 # Track mẫu
 
-Repo nội dung của **một track** trên [DSC Learning Hub](https://learn.hcmute-dsc.io.vn). Mỗi track một repo `hcmute-dsc/learning-hub-track-<slug>`, cùng tạo từ template [`learning-hub-track-template`](https://github.com/hcmute-dsc/learning-hub-track-template) ([ADR-10](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/product/DECISIONS.md#adr-10--mỗi-track-một-repo-learning-hub-content-thành-registry)).
+Repo nội dung của **một track** trên [HCMUTE DSC Learning Hub](https://learn.hcmute-dsc.io.vn). Mỗi track một repo `hcmute-dsc/learning-hub-track-<slug>`, cùng tạo từ template [`learning-hub-track-template`](https://github.com/hcmute-dsc/learning-hub-track-template) ([ADR-10](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/product/DECISIONS.md#adr-10--mỗi-track-một-repo-learning-hub-content-thành-registry)).
 
 ## Cấu trúc
 
