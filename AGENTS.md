@@ -13,6 +13,7 @@ This repo holds **one** track of the HCMUTE DSC Learning Hub (DECISIONS ADR-10).
 7. **Merged is not live.** Publishing is a PR to `learning-hub-content` that changes this track's `commit` in `tracks.yaml`. That is an outward action: ask the user first.
 8. **Public repo.** No secrets, member emails or private links; no hidden tests or solutions.
 9. Write in clear, simple Vietnamese. Technical terms stay in English.
+10. **Teach so a beginner understands.** Every lesson and exercise meets the 6 criteria in [TEACHING.md](TEACHING.md): word meanings (T1), explain before practice (T2), mental models (T3), real-world workflow (T4), setup (T5), where to ask, including privately (T6). Fill the TEACHING checklist in the PR template honestly.
 
 ## Skills in this repo (`.claude/skills/`)
 

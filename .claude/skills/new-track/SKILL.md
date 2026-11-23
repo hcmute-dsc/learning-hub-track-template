@@ -29,6 +29,13 @@ node tools/init-track.mjs <slug> "<Tên track>" <github-username>
 - `mentor-notes.md` is shown only to mentors and admins on the hub, but this repo is public: never put answers, solutions or hidden tests there.
 - Every new item gets a new `uid` (`node -e "console.log(crypto.randomUUID())"`). Never change a `uid` once published.
 - Delete the example items you don't use, and their names in `module.yaml`.
+- **Follow [TEACHING.md](../../../TEACHING.md)** (6 criteria from learner feedback). Use `lessons/03-teaching-standard.md` as the model:
+  - a "Từ mới trong bài" box with the English word, its full form and its literal Vietnamese meaning;
+  - "Đọc hiểu" after every command block;
+  - a diagram or comparison table for anything with states;
+  - a "Ngoài thực tế" section per chapter.
+
+  Keep the "Chuẩn bị chung" and "Hỏi ở đâu" sections of `docs/setup.md`, and put the real mentor's handle in. An exercise may only use what its lesson (and earlier ones) explained: try it yourself with nothing but the lessons.
 - **Run every command and code sample** in the lessons before committing. Quiz answers must match the questions.
 
 ## 3. Validate

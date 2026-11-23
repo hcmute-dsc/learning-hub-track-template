@@ -9,10 +9,14 @@ Cảm ơn bạn! Track này được nhiều thế hệ thành viên CLB cùng v
 3. **Chạy validator** trên máy (lệnh ở [README](README.md#kiểm-tra-trên-máy)).
 4. **Commit** dạng `<slug track>: <tóm tắt>`, thân commit ghi lý do và `Refs #<số>`.
 5. **Mở Pull Request** theo mẫu, dòng đầu `Closes #<số>`. CI `validate` phải xanh.
-6. **Review:** maintainer của track (`maintainers` trong `track.yaml`, xem `CODEOWNERS`) kiểm tra kiến thức đúng, câu lệnh chạy được, văn phong dễ hiểu, rồi **squash merge**. Không đẩy thẳng lên `main`.
+6. **Review:** maintainer của track (`maintainers` trong `track.yaml`, xem `CODEOWNERS`) kiểm tra kiến thức đúng, câu lệnh chạy được, bài đạt [chuẩn dạy dễ hiểu](TEACHING.md), rồi **squash merge**. Không đẩy thẳng lên `main`.
 7. **Publish:** merge vào đây chưa lên site. Mở PR vào [`learning-hub-content`](https://github.com/hcmute-dsc/learning-hub-content) để đổi `commit` của track trong `tracks.yaml`. Ban chủ nhiệm duyệt rồi publish. Issue chỉ Done khi nội dung đã lên site.
 
 Quy trình chung của dự án (vòng đời bug, review, Definition of Done): [WORKFLOW.md](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/ops/WORKFLOW.md).
+
+## Viết bài dễ hiểu
+
+Mọi bài học và bài tập phải đạt 6 tiêu chí trong [TEACHING.md](TEACHING.md): từ vựng, giải thích trước khi thực hành, mô hình tư duy, quy trình thực tế, cài đặt, hỏi bài. Bài mẫu áp dụng đủ 6 tiêu chí: [`03-teaching-standard.md`](tracks/example-track/modules/01-getting-started/lessons/03-teaching-standard.md). Mẫu Pull Request có checklist để tự kiểm tra; người review kiểm tra lại theo đúng checklist đó.
 
 ## Quy tắc quan trọng
 
