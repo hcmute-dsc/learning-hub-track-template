@@ -1,0 +1,42 @@
+# Từ vựng của track (TEACHING.md T1, CONTENT-SPECIFICATION §3.1c). Tuỳ chọn.
+# Site tạo từ file này: tab "Từ vựng", hộp "Từ mới trong bài" của mỗi bài (từ `terms:`
+# trong front matter của bài), và chú thích ở lần đầu từ đó xuất hiện trong bài.
+#
+#   term       bắt buộc  chữ người học gặp, giữ tiếng Anh
+#   expansion            dạng đầy đủ, khi term là viết tắt hoặc rút gọn
+#   literal              nghĩa đen của chữ, tiếng Việt
+#   meaning    bắt buộc  nó làm gì trong track này, một hai câu
+#   example              một lệnh hoặc một dòng có dùng chữ này
+#   see                  từ liên quan, phải có trong file này
+#
+# Thứ tự không quan trọng: site xếp A–Z. Track không cần từ điển thì xoá file này
+# và bỏ `terms:` ở các bài.
+
+- term: repository
+  literal: kho chứa
+  meaning: Thư mục mà Git theo dõi lịch sử thay đổi. Hay gọi tắt là repo.
+  see: [init]
+
+- term: init
+  expansion: initialize
+  literal: khởi tạo
+  meaning: Tạo thư mục ẩn .git, từ đó Git bắt đầu theo dõi thư mục này.
+  example: git init
+  see: [repository]
+
+- term: stage
+  literal: sân khấu, khu chờ
+  meaning: Nơi gom các thay đổi sẽ đưa vào commit tiếp theo. Lệnh git add đưa thay đổi vào đây.
+  example: git add index.html
+  see: [commit]
+
+- term: commit
+  literal: chốt, cam kết
+  meaning: Lưu một mốc thay đổi vào lịch sử, kèm lời nhắn mô tả mốc đó.
+  example: git commit -m "Thêm trang chủ"
+  see: [stage]
+
+- term: untracked
+  literal: chưa được theo dõi
+  meaning: File mới mà Git chưa từng lưu. git add để Git bắt đầu theo dõi nó.
+  see: [stage]

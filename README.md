@@ -1,6 +1,6 @@
 # Track mẫu
 
-Repo nội dung của **một track** trên [DSC Learning Hub](https://learn.hcmute-dsc.io.vn). Mỗi track một repo `hcmute-dsc/learning-hub-track-<slug>`, cùng tạo từ template [`learning-hub-track-template`](https://github.com/hcmute-dsc/learning-hub-track-template) ([ADR-10](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/product/DECISIONS.md#adr-10--mỗi-track-một-repo-learning-hub-content-thành-registry)).
+Repo nội dung của **một track** trên [HCMUTE DSC Learning Hub](https://learn.hcmute-dsc.io.vn). Mỗi track một repo `hcmute-dsc/learning-hub-track-<slug>`, cùng tạo từ template [`learning-hub-track-template`](https://github.com/hcmute-dsc/learning-hub-track-template) ([ADR-10](https://github.com/hcmute-dsc/learning-hub-docs/blob/main/docs/product/DECISIONS.md#adr-10--mỗi-track-một-repo-learning-hub-content-thành-registry)).
 
 ## Cấu trúc
 
@@ -9,6 +9,7 @@ tracks/example-track/        # đúng MỘT thư mục, tên = slug của track
   track.yaml                 # thông tin track + danh sách chương
   docs/setup.md              # tuỳ chọn: trang "Cài đặt" (cài công cụ, tự kiểm tra bài)
   docs/resources.md          # tuỳ chọn: trang "Tài liệu thêm"
+  glossary.yaml              # tuỳ chọn: trang "Từ vựng" (chữ tiếng Anh, chữ đầy đủ, nghĩa đen)
   assets/                    # ảnh (≤ 500 KB/ảnh)
   modules/01-getting-started/
     module.yaml              # danh sách bài học và bài tập của chương

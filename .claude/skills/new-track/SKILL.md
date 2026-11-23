@@ -30,7 +30,7 @@ node tools/init-track.mjs <slug> "<Tên track>" <github-username>
 - Every new item gets a new `uid` (`node -e "console.log(crypto.randomUUID())"`). Never change a `uid` once published.
 - Delete the example items you don't use, and their names in `module.yaml`.
 - **Follow [TEACHING.md](../../../TEACHING.md)** (6 criteria from learner feedback). Use `lessons/03-teaching-standard.md` as the model:
-  - a "Từ mới trong bài" box with the English word, its full form and its literal Vietnamese meaning;
+  - new English words in `tracks/<slug>/glossary.yaml` (term, full form, literal Vietnamese meaning, meaning) and in the lesson's `terms:` front matter; the hub builds the "Từ mới trong bài" box from them, so don't write the box by hand;
   - "Đọc hiểu" after every command block;
   - a diagram or comparison table for anything with states;
   - a "Ngoài thực tế" section per chapter.

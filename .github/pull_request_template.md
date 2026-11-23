@@ -22,7 +22,7 @@ Closes #
 
 Thêm hoặc sửa bài học, bài tập thì tự kiểm tra (không áp dụng thì ghi "không áp dụng"):
 
-- [ ] **T1 Từ vựng:** chữ tiếng Anh mới nào cũng có nghĩa đen và chữ đầy đủ nếu viết tắt; có hộp "Từ mới trong bài"
+- [ ] **T1 Từ vựng:** chữ tiếng Anh mới nào cũng có nghĩa đen và chữ đầy đủ nếu viết tắt; từ mới có trong `glossary.yaml` và trong `terms:` của bài
 - [ ] **T2 Giải thích trước:** đã làm thử bài tập chỉ với những gì bài học đã viết; mỗi khối lệnh có "Đọc hiểu"
 - [ ] **T3 Mô hình:** khái niệm có trạng thái hoặc dễ nhầm có sơ đồ hoặc bảng so sánh
 - [ ] **T4 Thực tế:** chương có đoạn "Ngoài thực tế"
